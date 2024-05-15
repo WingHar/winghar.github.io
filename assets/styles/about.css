@@ -29,6 +29,7 @@ nav ul li a {
 
 .section {
     text-align: center;
+    padding: 8vw;
 }
 
 .about_container {
@@ -40,8 +41,10 @@ nav ul li a {
 }
 
 .biography_container {
-    width: 80%;
-    margin: 0 auto;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .about_container h1 {
@@ -49,9 +52,14 @@ nav ul li a {
 }
 
 .my_biography {
-    white-space: pre;
     line-height: 35px;
 }
+
+.my_biography p {
+  line-height: 3vw;
+  font-size: 1vw;
+}
+
 
 .team-members {
     display: flex;
@@ -112,7 +120,7 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.833vw;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
@@ -330,6 +338,13 @@ nav ul li a {
 }
 
 .about_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about_image img {
   display: block;
   margin-left: auto;
   margin-right: auto;

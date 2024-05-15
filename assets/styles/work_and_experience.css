@@ -13,6 +13,7 @@ header {
 
 .section {
     text-align: center;
+    padding: 8vw;
 }
 
 .work_and_experience_container {
@@ -334,19 +335,19 @@ header {
 
 /* Styles for text */
 .product_gym_text h1 {
-  font-size: 70px;
+  font-size: 3.646vw;
   color: #fff;
 }
 
 .product_gym_text > h3 {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: #fff;
   text-align: left;
   white-space: pre;
 }
 
 .product_gym_text > p {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: #fff;
   white-space: pre;
   text-align: left;
@@ -373,19 +374,19 @@ header {
 
 /* Styles for text */
 .fbs_text h1 {
-  font-size: 70px;
+  font-size: 3.646vw;
   color: #fff;
 }
 
 .fbs_text > h3 {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: #fff;
   text-align: left;
   white-space: pre;
 }
 
 .fbs_text > p {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: #fff;
   white-space: pre;
   text-align: left;
@@ -412,19 +413,19 @@ header {
 
 /* Styles for text */
 .hollywood_insider_text h1 {
-  font-size: 70px;
+  font-size: 3.646vw;
   color: #fff;
 }
 
 .hollywood_insider_text > h3 {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: #fff;
   text-align: left;
   white-space: pre;
 }
 
 .hollywood_insider_text > p {
-  font-size: 20px;
+  font-size: 1.042vw;
   color: #fff;
   white-space: pre;
   text-align: left;
@@ -445,7 +446,7 @@ header {
   border-style: solid;
   border-color: #fff;
   transition: background-color 0.3s; /* Smooth background color change on hover */
-  font-size: 30px;
+  font-size: 1.563vw;
 }
 
 .case_study_button:hover {
@@ -463,7 +464,7 @@ header {
   border-style: solid;
   border-color: #fff;
   transition: background-color 0.3s; /* Smooth background color change on hover */
-  font-size: 30px;
+  font-size: 1.563vw;
 }
 
 .case_study_button_red_background:hover {
@@ -512,7 +513,7 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 0.833vw;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
@@ -546,4 +547,11 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.work_and_experiences_image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
