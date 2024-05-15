@@ -1,0 +1,549 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1em 0;
+}
+
+.section {
+    text-align: center;
+}
+
+.work_and_experience_container {
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 2vw;
+}
+
+.work_and_experience_container h1 {
+    font-size: 4vw;
+}
+
+.work_and_experience_container h2 {
+    font-size: 2.5vw;
+}
+
+.work_and_experience_container h3 {
+    font-size: 1.5vw;
+}
+
+
+.squiggly_underline {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #1559d8; /* You can change this to any color you prefer */
+    text-underline-offset: 1.5vw;
+}
+
+.highlight_underline_red {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #d61313; /* You can change this to any color you prefer */
+    text-underline-offset: .2vw;
+}
+
+.highlight_underline {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #1559d8; /* You can change this to any color you prefer */
+    text-underline-offset: .2vw;
+}
+
+.highlight_underline_white {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #fff; /* You can change this to any color you prefer */
+  text-underline-offset: .2vw;
+}
+
+/* Updated CSS for the permanent red circle */
+.highlight_circle {
+    position: relative;
+    display: inline-block;
+    padding: 5px; /* Adjust padding to ensure space for the circle */
+}
+
+.highlight_circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    border: 2px solid #d61313;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: circleExpand 1s ease-out forwards;
+}
+
+@keyframes circleExpand {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 105%;
+        height: 105%;
+        opacity: 1;
+    }
+}
+
+.wave_animation {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin: 0;
+    z-index:5;
+    bottom:0;
+    top:0;
+    position:absolute;
+    left:0px;
+    float:left;
+  }
+  
+  .parallax1 > use {
+    animation: move-forever1 10s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax2 > use {
+    animation: move-forever2 8s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax3 > use {
+    animation: move-forever3 6s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax4 > use {
+    animation: move-forever4 4s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  @keyframes move-forever1 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  @keyframes move-forever2 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  @keyframes move-forever3 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  @keyframes move-forever4 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  
+  .wave_animation_container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+.color-block {
+    background:#1559d8;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#fff;
+}
+
+.color-block h1 h3 {
+    color: #fff;
+}
+
+.color-block-red {
+    background:#d81515;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#fff;
+}
+
+.color-block-red h1 h3 {
+    color: #fff;
+}
+
+.white-block {
+    background:#fff;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#1559d8;
+}
+
+.white-block h1 h3 {
+    color: #1559d8;
+}
+
+/*------------------*/
+/*  SKEW CLOCKWISE  */
+/*------------------*/
+.skew-cc {
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, #1559d8 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+  
+  
+/*-------------------------*/
+/* SKEW COUNTER CLOCKWISE  */
+/*-------------------------*/
+.skew-c {
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, #1559d8 50%);
+}
+
+.skew-c-red {
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, #d81515 50%);
+}
+
+/*-------------------------*/
+/*     SECTION DIVIDERS    */
+/*-------------------------*/
+
+.h-divider {
+  margin: auto;
+  margin-top: 80px;
+  width: 80%;
+  position: relative;
+}
+
+.h-divider .shadow {
+  overflow: hidden;
+  height: 20px;
+}
+
+.h-divider .shadow:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px black;
+}
+
+.h-divider .text {
+  width: 100px;
+  height: 45px;
+  padding: 10px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -33px;
+  left: 50%;
+  margin-left: -60px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: white;
+}
+
+.h-divider .text i {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 100%;
+  border: 1px dashed #aaa;
+  text-align: center;
+  line-height: 50px;
+  font-style: normal;
+  color: #999;
+}
+
+.h-divider .text2 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -35px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: white;
+}
+
+.h-divider img {
+  position: absolute;
+  margin: 4px;
+  max-width: 60px;
+  border-radius: 100%;
+  border: 1px dashed #aaa;
+}
+
+/*-------------------------*/
+/*       Product Gym       */
+/*-------------------------*/
+
+.product_gym_container {
+  background-color: #1559d8;
+  padding: 70px 0;
+  text-align: center;
+  display: flex; /* Use flexbox to align children side by side */
+  justify-content: center; /* Center-align the flex items horizontally */
+  align-items: center; /* Center-align the flex items vertically */
+}
+
+/* Styles for images to scale within their container */
+.product_gym_image img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+/* Styles for text */
+.product_gym_text h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+.product_gym_text > h3 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  white-space: pre;
+}
+
+.product_gym_text > p {
+  font-size: 20px;
+  color: #fff;
+  white-space: pre;
+  text-align: left;
+}
+
+/*-------------------------*/
+/*           FBS           */
+/*-------------------------*/
+
+.fbs_container {
+  background-color: #E11515;
+  padding: 70px 0;
+  text-align: center;
+  display: flex; /* Use flexbox to align children side by side */
+  justify-content: center; /* Center-align the flex items horizontally */
+  align-items: center; /* Center-align the flex items vertically */
+}
+
+/* Styles for images to scale within their container */
+.fbs_image img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+/* Styles for text */
+.fbs_text h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+.fbs_text > h3 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  white-space: pre;
+}
+
+.fbs_text > p {
+  font-size: 20px;
+  color: #fff;
+  white-space: pre;
+  text-align: left;
+}
+
+/*-------------------------*/
+/*    Hollywood Insider    */
+/*-------------------------*/
+
+.hollywood_insider_container {
+  background-color: #1559d8;
+  padding: 70px 0;
+  text-align: center;
+  display: flex; /* Use flexbox to align children side by side */
+  justify-content: center; /* Center-align the flex items horizontally */
+  align-items: center; /* Center-align the flex items vertically */
+}
+
+/* Styles for images to scale within their container */
+.hollywood_insider_image img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+/* Styles for text */
+.hollywood_insider_text h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+.hollywood_insider_text > h3 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  white-space: pre;
+}
+
+.hollywood_insider_text > p {
+  font-size: 20px;
+  color: #fff;
+  white-space: pre;
+  text-align: left;
+}
+
+/*-------------------------*/
+/*           BTN           */
+/*-------------------------*/
+
+.case_study_button {
+  display: inline-block;        /* Makes the link behave like a button */
+  padding: 10px 20px;           /* Adds space inside the button */
+  background-color: #E11515;    /* Sets the background color */
+  color: white;                 /* Sets the text color */
+  text-align: center;           /* Centers the text inside the button */
+  text-decoration: none;        /* Removes underline from the link */
+  border-radius: 15px;          /* Rounds the corners */
+  border-style: solid;
+  border-color: #fff;
+  transition: background-color 0.3s; /* Smooth background color change on hover */
+  font-size: 30px;
+}
+
+.case_study_button:hover {
+  background-color: #0056b3;    /* Changes background on hover */
+}
+
+.case_study_button_red_background {
+  display: inline-block;        /* Makes the link behave like a button */
+  padding: 10px 20px;           /* Adds space inside the button */
+  background-color: #0056b3;    /* Sets the background color */
+  color: white;                 /* Sets the text color */
+  text-align: center;           /* Centers the text inside the button */
+  text-decoration: none;        /* Removes underline from the link */
+  border-radius: 15px;          /* Rounds the corners */
+  border-style: solid;
+  border-color: #fff;
+  transition: background-color 0.3s; /* Smooth background color change on hover */
+  font-size: 30px;
+}
+
+.case_study_button_red_background:hover {
+  background-color: #991c1c;    /* Changes background on hover */
+}
+
+/*-------------------------*/
+/*          FOOTER         */
+/*-------------------------*/
+
+.footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 3em 1em 0 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_menu, .footer_post_text {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 1em;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer .icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.footer button {
+  background-color: #0077b5;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer img:hover, .footer button:hover, .footer_menu:hover {
+  transform: scale(1.2);
+}
+
+.footer button img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.about_highlight {
+  color: #1559d8;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.footer_highlight {
+  color: #1559d8;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.work_and_experiences_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
